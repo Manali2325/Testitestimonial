@@ -19,14 +19,14 @@
     font-family: Arial, sans-serif;
 }
 .navbar {
-    background-color: #343a40;
+    background-color: #006dd9;
     padding: 10px 20px;
 }
 .navbar-brand, .nav-link {
-    color: white !important;
+    color: rgb(17, 17, 17) !important;
 }
 .navbar-toggler {
-    border-color: white;
+    border-color: rgb(142, 64, 64);
 }
 .section {
     padding: 50px 0;
@@ -91,8 +91,168 @@
     color: #ffc107;
     font-size: 1.2rem;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .rating i {
     margin: 0 2px;
+    width: 100px; 
+    height: auto;
 }
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #333019;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #181817;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    background-color: transparent;
+}
+/* General body background */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Navbar background */
+.navbar {
+    background-color: #3d4143; /* Blue */
+    padding: 10px;
+}
+
+/* Sections background */
+.section {
+    padding: 50px;
+}
+
+.order-btn{
+    margin-bottom: 10px;
+}
+
+#home {
+    background-color: #d47552; /* White */
+}
+
+.about-section {
+    background-color: #d49393; /* Light gray */
+}
+
+.testimonial-section {
+    background-color: #87a3c0; /* Slightly darker gray */
+}
+
+.contact-section {
+    background-color: #d1b76d; /* Light green */
+}
+
+.contact-form {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* Home Section Styling */
+.home-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/image/farm-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Styling for Text */
+.home-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.home-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* CTA Button */
+.btn-warning {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #ffc107;
+    transform: scale(1.2);
+}
+
+/* Image Carousel */
+/* Centering the Home Carousel */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 150vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/image/farm-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 90px 0;
+}
+
+/* Center the carousel inside the home section */
+#dairyCarousel {
+    max-width: 80%; /* Adjust width if needed */
+    /* margin: 0 middle; */
+    margin-top: 20px;
+}
+
+/* Adjusting the carousel images */
+.carousel img {
+    max-width: 200px; /* Set a reasonable max width */
+    height: auto;
+    display: inline-table;
+}
+
+/* Ensure carousel buttons are visible and styled properly */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+

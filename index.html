@@ -9,33 +9,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<div>
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">Sai Dairy Farm</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#">Sai Dairy Farm 🐄</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+
+
+<section id="home" class="home-section">
+    <div class="container text-center">
+        <h1>Welcome to Sai Dairy Farm 🐄</h1>
+        <p>Pure, Fresh & Healthy Dairy Products Delivered to Your Doorstep</p>
+        <button class="btn btn-warning btn-lg  order-btn" >Order Now Here </button>
+    </div>
+
+    <!-- Dairy Products Image Carousel -->
+    <div id="dairyCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/image/milk.png" class="d-block w-100" alt="Fresh Milk" style="width: 80%; height: 500px ; margin:0 auto; display:block;">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image/buuter.png" class="d-block w-100" alt="Pure Butter" style="width: 80%; height: 500px; margin:0 auto; display:block;">
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image/cheese.png" class="d-block w-100" alt="Organic Cheese" style="width: 80%; height: 500px; margin:0 auto; display:block;">
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image/milkbottle.png" class="d-block w-100" alt="bottlemilk" style="width: 80%; height: 500px; margin:0 auto; display:block;">
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image/milkglass.png" class="d-block w-100" alt="milkglass" style="width: 80%; height: 500px; margin:0 auto; display:block;">
+            </div>
         </div>
-    </nav>
-</div>
-<!-- hiii -->
-
-
-<section id="home" class="section">
-    <h2>Welcome to Sai Dairy Farm</h2>
-    <p>Fresh dairy products delivered to your doorstep.</p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#dairyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="margin-top: 200px;"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#dairyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="margin-top: 200px;"></span>
+        </button>
+    </div>
 </section>
 
 <section id="about" class="section about-section">
     <h2>About Us</h2>
-    <p>Sai Dairy Farm is committed to providing high-quality dairy products sourced from the best farms.</p>
+    <p>Welcome to Sai Dairy Farm,where tradition meets innovation in dairy farming. Nestled in Satara, 
+        we are a dedicated team of farmers passionate about delivering high-quality, farm-fresh milk
+         straight from our pastures to your home. With a commitment to sustainable farming, ethical animal care,
+         and advanced dairy production techniques, we ensure that every product we offer is pure, nutritious, 
+         and responsibly sourced. Our cows are raised in a healthy, stress-free environment, 
+         allowing us to produce fresh milk and other dairy products that meet the highest standards of quality and taste.
+         At Sai Dairy Farm, we believe in transparency, community support, and preserving the rich heritage of dairy farming while embracing modern advancements.
+         Whether you are a customer looking for fresh dairy or a partner interested in sustainable agriculture, we invite you to be a part of our journey
+         toward a healthier and more sustainable future.Join us in celebrating the goodness of nature, one dairy product at a time!
+        
+        </p>
 </section>
 
 <section id="testimonials" class="testimonial-section">
@@ -49,32 +95,28 @@
             <div class="carousel-item active">
                 <div class="testimonial-container" data-rating="5">
                     <div class="testimonial-card">
-                        <img src="./assets/image/image.png" alt="User 1">
+                        <img src="./assets/image/image.png" alt="User 1"style="width: 100px; height: auto;">
                         <h4>John Doe</h4>
-                        <p>CEO, Company Inc.</p>
                         <p>"Great service! Highly recommend."</p>
                         <div class="rating"></div>
                     </div>
 
                     <div class="testimonial-card" data-rating="4">
-                        <img src="./assets/image/image.png" alt="User 2">
+                        <img src="./assets/image/img1.png" alt="User 2" style="width: 100px; height: auto;">
                         <h4>Jane Smith</h4>
-                        <p>Marketing Head</p>
                         <p>"Amazing experience and great quality!"</p>
                         <div class="rating"></div>
                     </div>
                     
                     <div class="testimonial-card" data-rating="3">
-                        <img src="./assets/image/image.png" alt="User 2">
-                        <h4>Jane Smith</h4>
-                        <p>Marketing Head</p>
+                        <img src="./assets/image/img2.png" alt="User 2" style="width: 100px; height: auto;">
+                        <h4>Jane Smith</h4>                        
                         <p>"Amazing experience and great quality!"</p>
                         <div class="rating"></div>
                     </div>
                     <div class="testimonial-card" data-rating="4">
-                        <img src="user3.jpg" alt="User 3">
+                        <img src="./assets/image/img3.png" alt="User 3"style="width: 100px; height: auto;">
                         <h4>Michael Brown</h4>
-                        <p>Designer</p>
                         <p>"Best service I have ever used!"</p>
                         <div class="rating"></div>
                     </div>
@@ -84,25 +126,22 @@
             <div class="carousel-item">
                 <div class="testimonial-container" data-rating="3">
                     <div class="testimonial-card">
-                        <img src="user4.jpg" alt="User 4">
+                        <img src="./assets/image/img4.png" alt="User 4"style="width: 100px; height: auto;">
                         <h4>Emily White</h4>
-                        <p>Developer</p>
-                        <p>"Absolutely love it!"</p>
+                        <p>"Best Testing Milk On The Market!"</p>
                         <div class="rating"></div>
                     </div>
                     <div class="testimonial-card" data-rating="5">
-                        <img src="user5.jpg" alt="User 5">
+                        <img src="./assets/image/img5.png" alt="User 5"style="width: 100px; height: auto;">
                         <h4>David Johnson</h4>
-                        <p>Entrepreneur</p>
-                        <p>"Fantastic support and features."</p>
+                        <p>"very good & healthy products."</p>
                         <div class="rating"></div>
                         
                     </div>
                     <div class="testimonial-card" data-rating="4">
-                        <img src="user6.jpg" alt="User 6">
+                        <img src="./assets/image/img6.png" alt="User 6"style="width: 100px; height: auto;">
                         <h4>Susan Wilson</h4>
-                        <p>Freelancer</p>
-                        <p>"Highly recommended for all!"</p>
+                        <p>"Amazing Milk Products!"</p>
                         <div class="rating"></div>
 
                     </div>
@@ -122,6 +161,15 @@
 <section id="contact" class="section contact-section">
     <h2>Contact Us</h2>
     <p>Get in touch with us for more information about our products.</p>
+    
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="form-response" style="display: none; color: green;"></p>
 </section>
 
 
